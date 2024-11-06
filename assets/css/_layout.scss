@@ -1,0 +1,78 @@
+body {
+    background-color:  #65bffcf8;
+}
+
+.container {
+    padding: 2rem;
+    text-align: center;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      color: $text-color;
+      margin-bottom: 1.5rem;
+    }
+  
+    .buttons {
+      margin-bottom: 2rem;
+  
+      .bt1 {
+        @include button-style($primary-color, white);
+        margin-right: 0.5rem;
+      }
+  
+      .bt2 {
+        @include button-style($secondary-color, white);
+      }
+    }
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: $secondary-color;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background-color: $primary-color;
+    color: white;
+  
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+}
+
+    @media(max-width: 450px) {
+        .header {
+            .logo {
+              text-align: center;
+              font-weight: bold;
+              font-size: 20px;
+              padding-left: 25%;
+            }
+          
+            nav {
+             display: none;
+            }
+    }
+  }
+
+  
